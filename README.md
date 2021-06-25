@@ -15,7 +15,11 @@ In this project we built a simple Rails application with forms for creating and 
 In order to use test out this project on you local machine please follow the following steps:
 - Navigate to a file directory in your computer where you wish to store this project.
 
-- Clone the files to that directory by opening your Git terminal in the directory, copying the URL of this project, and entering the ```git clone``` command followed by the URL of this project.
+- Clone the files to that directory by opening your Git terminal in the directory, copying the URL of this project, and entering the ```git clone``` command followed by the URL of this project. ```git clone git@github.com:petumazo/re-former.git```.
+
+- Run ```bundle install``` to install the dependencies specified in the Gemfile int to your local machine.
+
+- To set up the database, run ```rails db:migrate```.
 
 - Navigate into the project's directory, open your terminal, and enter the command ```rails server``` to start a server on which the app will run.
 
