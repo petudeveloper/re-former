@@ -12,10 +12,15 @@ In this project we built a simple Rails application with forms for creating and 
 - Ruby on Rails
 
 ## Getting Started:
-- In order to use test out this project on you local machine please follow the following steps:
+In order to use test out this project on you local machine please follow the following steps:
 
 - Clone the files to your computer by either using Git (i.e. entering the "git clone" command into your terminal followed by the project's URL) or by downloading a zipped folder containing the project files.
-Open your terminal in the folder containing the project files and run the necessary Rails commands for testing the project.
+
+- Navigate into the project's directory, open your terminal, and enter the command ```rails server``` to start a server on which the app will run.
+
+- To create a new user, open your browser and go to localhost:3000/users/new.
+
+- To edit an existing user, open your browser and go to localhost:3000/users/(the id of that specific user)/edit.
 
 ## Authors
 
