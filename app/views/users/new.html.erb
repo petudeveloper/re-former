@@ -1,6 +1,8 @@
 <h1>New User</h1>
 
-<!-- Plain HTML form
+<%
+=begin %>
+     Plain HTML form
      <form action="/users" method="post" accept-charset="UTF-8" >
      <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
      <label for="user_name">User name:</label>
@@ -15,9 +17,12 @@
      <br>
      <input type="submit" name="commit" value="Create User" data-disable-with="Create User">
      </form>
--->
+<%
+=end %>
 
-<!-- *_tag form
+<%
+=begin %>
+     *_tag form
      <%= form_tag("/users",  method: "post") do %>
      <%= label_tag(:user_username, 'User name:') %>
      <%= text_field(:user, :username) %>
@@ -30,7 +35,8 @@
      <br>
      <%= submit_tag('Create user')%>
      <% end %>
--->
+<%
+=end %>
 
 <%= form_with model: @user do |form| %>
   <div>
