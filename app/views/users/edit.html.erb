@@ -1,6 +1,6 @@
 <h1>Edit User</h1>
 
-<%= form_with model: @user do |form| %>
+<%= form_with model: @user, method: :put do |form| %>
   <div>
     <%= form.label :username, 'User name:' %>
     <%= form.text_field :username %>
@@ -16,5 +16,5 @@
     <%= form.password_field(:password) %>
   </div>
 
-  <%= form.submit('Create user')%>
+  <%= form.submit('Update user')%>
 <% end %>
