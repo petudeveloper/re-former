@@ -1,6 +1,6 @@
 # Rails Forms Project
 
-In this project we created a simple Rails application with forms for creating and editing users in the application's database. Validations have been given for each form field and appropriate error messages are displayed when invalid data is entered into the Edit User form.
+In this project we built a simple Rails application with forms for creating and editing users in the application's database. Validations have been given for each form field and appropriate error messages are displayed when invalid data is entered into the Edit User form.
 
 ![New user form blank](/readme%20img/screenshot_1.png)
 ![New user form filling](/readme%20img/screenshot_3.png)
