@@ -1,5 +1,37 @@
 <h1>New User</h1>
 
+<!-- Plain HTML form
+     <form action="/users" method="post" accept-charset="UTF-8" >
+     <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+     <label for="user_name">User name:</label>
+     <input type="text" name="user[username]" id="user_name" value="example" />
+     <br>
+     <label for="user_email">email:</label>
+     <input type="text" name="user[email]" id="user_email"
+     value="example@examplemail.com" />
+     <br>
+     <label for="user_password">Password:</label>
+     <input type="password" name="user[password]" id="user_password" value="" />
+     <br>
+     <input type="submit" name="commit" value="Create User" data-disable-with="Create User">
+     </form>
+-->
+
+<!-- *_tag form
+     <%= form_tag("/users",  method: "post") do %>
+     <%= label_tag(:user_username, 'User name:') %>
+     <%= text_field(:user, :username) %>
+     <br>
+     <%= label_tag(:user_email, 'email:') %>
+     <%= text_field(:user, :email) %>
+     <br>
+     <%= label_tag(:user_password, 'Password:') %>
+     <%= password_field(:user, :password) %>
+     <br>
+     <%= submit_tag('Create user')%>
+     <% end %>
+-->
+
 <%= form_with model: @user do |form| %>
   <div>
     <%= form.label :username, 'User name:' %>
